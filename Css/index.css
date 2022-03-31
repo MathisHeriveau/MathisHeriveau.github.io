@@ -1,0 +1,169 @@
+body{
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://wallpaper.dog/large/20456385.jpg");
+    font-size: 100%;
+    background-size:100%;
+    background-repeat: no-repeat;
+    margin: 0px;
+    justify-content: space-around;
+    border: black 1px;
+}
+
+:root{
+    --hauteur-menu: 40px;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Montserrat, sans-serif;
+}
+
+
+header {
+    /* Largeur a 100% */
+    width:7em;
+    /* Size de la police */
+    font-size: 18px;  
+    /* Reste en haut meme si on defile*/
+    position: sticky;
+    /* Pas de margin */
+    top: 0;
+    font-size: large;
+    text-align: center;
+    padding-left: 20%;
+}
+
+/* Pour l'élement ul aprés header */
+header > ul {
+    /* On ajoute une flex box */
+    display: flex;
+    /* On aligne le texte au centre */
+    text-align: center;
+    /* Haureur de la variable */
+    height: var(--hauteur-menu);
+    
+}
+
+/* On enleve les styles par dedfault */
+header ul {
+    list-style-type: none;  
+}
+
+/* Les li dans ul dans header */
+header > ul > li {
+    height: 100%;
+    flex: 2;
+    background-color:rgba(0,0,0,0.8);
+}
+
+header > ul > li > a {
+    position:absolute;
+    top: 12%;
+    width: 100%;
+    transform: translate(-50%, 1%);
+    color: white;
+    
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.menu-deroulant > a::before{
+    content: "Ξ";
+    color: red;
+    font-size: 15px;
+    margin-left: 7px;
+    display: inline-block;
+}
+
+.sous-menu {
+    margin-top: var(--hauteur-menu);
+    width: 100%;
+    text-align: left;
+    background-color:rgba(0,0,0,0.8);
+    color: white;
+    border-radius: 2px;
+    overflow: hidden;
+    max-height: 0;
+    text-align: center;
+
+}
+
+.sous-menu > li > a {
+    height: 50px;
+    padding-left: 20px;
+    width: 100%;
+    align-items: center;
+    color: white;
+}
+
+
+
+.sous-menu > li:hover {
+    background-color: rgba(33, 105, 236, 0.3);
+}
+
+.sous-menu > li:hover > a {
+    color: white;
+    
+}
+
+@keyframes rotationFleche {
+0% {
+    transform: rotate(0deg);
+}
+100%{
+    transform: rotate(90deg);
+}
+}  
+
+.menu-deroulant:hover > a::before{
+    animation: rotationFleche 0.2s linear forwards;
+}
+
+@keyframes apparitionSousMenu {
+    0% {
+    }
+    30% {
+    }
+    100% {
+        max-height: 50em;
+    }
+}
+
+.menu-deroulant:hover > .sous-menu {
+    animation: apparitionSousMenu 1s forwards;
+    text-align: left;
+}
+
+section{
+    padding-top: 10%;
+    text-align: center;
+
+}
+
+section > h2 {
+    color: #a8084a;
+    font-size: x-large;
+}
+section > h1 {
+    font-size: 400%;
+    color: white;
+    font-family: 'wpf';
+    src: url('wpf.eot');
+    src: url('wpf.eot?#iefix') format('embedded-opentype'),
+            url('wpf.woff2') format('woff2'),
+            url('wpf.woff') format('woff'),
+            url('wpf.ttf') format('truetype'),
+            url('wpf.sbg#svgwpf') format('svg');
+}
+
+section > h3 {
+    font-size: medium;
+    color:gainsboro;
+    font-family:'Courier New', Courier, monospace;
+
+}
