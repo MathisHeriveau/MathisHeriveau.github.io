@@ -1,36 +1,34 @@
 body{
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://wallpaper.dog/large/20456385.jpg");
-    font-size: 100%;
-    background-size:100%;
+    
     background-repeat: no-repeat;
     margin: 0px;
     justify-content: space-around;
     border: black 1px;
+    font-size: 10px;
 }
 
 :root{
-    --hauteur-menu: 40px;
+    --hauteur-menu: 2rem;
 }
 
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0rem;
+    padding: 0rem;
     font-family: Montserrat, sans-serif;
 }
 
 
 header {
     /* Largeur a 100% */
-    width:7em;
-    /* Size de la police */
-    font-size: 18px;  
+    width:7rem;
     /* Reste en haut meme si on defile*/
     position: sticky;
     /* Pas de margin */
     top: 0;
     font-size: large;
     text-align: center;
-    padding-left: 20%;
+    padding-left: 25rem;
 }
 
 /* Pour l'élement ul aprés header */
@@ -51,7 +49,6 @@ header ul {
 
 /* Les li dans ul dans header */
 header > ul > li {
-    height: 100%;
     flex: 2;
     background-color:rgba(0,0,0,0.8);
 }
@@ -93,8 +90,7 @@ li a {
 }
 
 .sous-menu > li > a {
-    height: 50px;
-    padding-left: 20px;
+    padding: 2%;
     width: 100%;
     align-items: center;
     color: white;
@@ -140,7 +136,7 @@ li a {
 }
 
 section{
-    padding-top: 10%;
+    padding-top: 9rem;
     text-align: center;
 
 }
