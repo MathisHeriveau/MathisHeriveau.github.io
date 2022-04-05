@@ -9,8 +9,8 @@ body{
     font-family: 'Roboto', sans-serif;
     color: #333;
 
-    width: 98vw;
-    height: 98vh;
+    width: 100vw;
+    height: 100vh;
 
     overflow: hidden;
 
@@ -115,10 +115,9 @@ p{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    
-
-
-    width: 100%;
+    /*Descendre de 10px*/
+    margin-top: 10px;
+    width: 50%;
     height: 12vh;
 
 }
@@ -130,3 +129,24 @@ p{
     max-height: 50%;
 }
 
+.contact > a > img{
+    /*Diminuer l'image*/
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.MeilleurProjet:hover{
+    animation: 1s ease-in-out 0s normal none 1 running bounce;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
