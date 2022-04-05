@@ -31,8 +31,8 @@
 
     .MeilleurProjet > a > img{
         /*Diminuer l'image*/
-        max-width: 50%;
-        max-height: 50%;
+        max-width: 80px;
+        max-height: 80px;
     }
 
     .contact > a > img{
@@ -53,10 +53,22 @@
         font-family: 'Rokkitt', Times, serif, sans-serif;
     }
 
+    .contact{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        /*Descendre de 10px*/
+        margin-top: 10px;
+        width: 50%;
+        height: 12vh;
+
+    }
+
 }
 @media (max-width: 768px){
     h1{
-        font-size: 1em;
+        font-size: 2em;
         margin-bottom: 0;
         /*Font-family arondisment*/
         font-family: 'times new roman', serif;
@@ -66,14 +78,14 @@
 
     .MeilleurProjet > a > img{
         /*Diminuer l'image*/
-        max-width: 100%;
-        max-height: 100%;
+        max-width: 70px;
+        max-height: 70px;
     }
 
     .contact > a > img{
         /*Diminuer l'image*/
-        max-width: 100px;
-        max-height: 100px;
+        max-width: 50px;
+        max-height: 50px;
     }
 
     .barreMySkill{
@@ -88,6 +100,21 @@
         font-family: 'Rokkitt', Times, serif, sans-serif;
     }
 
+    .contact{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        /*Descendre de 10px*/
+        margin-top: 10px;
+        width: 100%;
+        height: 12vh;
+
+    }
+
+    .bandoCitation{
+        font-size: small;
+    }
 }
 
 
@@ -164,17 +191,6 @@
         
     }
 
-    .contact{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        /*Descendre de 10px*/
-        margin-top: 10px;
-        width: 50%;
-        height: 12vh;
-
-    }
 
 
     
