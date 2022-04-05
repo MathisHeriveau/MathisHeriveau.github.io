@@ -135,7 +135,7 @@ p{
     max-height: 50px;
 }
 
-.MeilleurProjet:hover{
+.MeilleurProjet > a > img:hover{
     animation: 1s ease-in-out 0s normal none 1 running bounce;
 }
 
