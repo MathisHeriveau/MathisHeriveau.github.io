@@ -5,6 +5,17 @@ body{
     justify-content: space-around;
     border: black 1px;
     font-size: 10px;
+    font-family: Arial;
+    color: black;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
 }
 
 :root{
@@ -140,10 +151,10 @@ section{
 
 section > h2 {
     color: #a8084a;
-    font-size: x-large;
+    font-size: 2vw;
 }
 section > h1 {
-    font-size: 400%;
+    font-size: 4vw;
     color: rgb(48, 48, 48);
     font-family: 'wpf';
     src: url('wpf.eot');
@@ -155,8 +166,54 @@ section > h1 {
 }
 
 section > h3 {
-    font-size: medium;
+    font-size: 1vw;
     color:gainsboro;
     font-family:'Courier New', Courier, monospace;
 
+}
+
+.traduire{
+    font-size: 1vw;
+    color: #a8084a;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+div > button {
+    background-color: #a8084a;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 1%;
+    font-size: 1vw;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+div > button:hover {
+    background-color: #a8084a;
+    color: blue;
+    border: none;
+    border-radius: 5px;
+    padding: 1%;
+    font-size: 1vw;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+div > button:active {
+    background-color: #a8084a;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 1%;
+    font-size: 1vw;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+div > button:focus {
+    background-color: blue;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 1%;
+    font-size: 1vw;
+    font-family: 'Courier New', Courier, monospace;
 }
