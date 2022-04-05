@@ -1,219 +1,127 @@
 body{
-    background-color: snow;
-    background-repeat: no-repeat;
-    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #f5f5f5;
+
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+
+    width: 99vw;
+
+
+}
+
+h1{
+    font-size: 2.5em;
+    margin-bottom: 0;
+    /*Font-family arondisment*/
+    font-family: 'times new roman', serif;
+    letter-spacing: 2px;
+    height: 12vh;
+}
+
+.barreDeNavigation{
+    display: flex;
+    flex-direction: row;
     justify-content: space-around;
-    border: black 1px;
-    font-size: 10px;
-    font-family: Arial;
-    color: black;
+    /*Reduire le space-around*/
+    width: 70%;
+    align-items: center;
+    font-size:medium;
+
+    height: 9vh;
+
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+/*Transition pour le a:hover en couleur bleu*/
+a:hover{
+    color: #00bcd4;
+}
+
+.bandoCitation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 100%;
+    height: 15vh;
+    background-color: #82a0b663;
+
+    font-family: 'Rokkitt', Times, serif, sans-serif;
+}
+
+p{
+    margin-bottom: 0;
+    font-family:'Rokkitt', Times, serif, sans-serif;
+    letter-spacing: 2px;
+
+    /*Mise en italique */
+    font-style: italic;
     text-align: center;
-    padding: 0px;
-    margin: 0px;
+}
+
+.barreMySkill{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 100%;
+    height: 12vh;
+
+    font-family: 'Rokkitt', Times, serif, sans-serif;
+}
+
+.MeilleurProjet{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: 100vh;
-    width: 100vw;
-}
 
-:root{
-    --hauteur-menu: 5vh;
-}
+    width: 80%;
+    height: 30vh;
 
-* {
-    margin: 0rem;
-    padding: 0rem;
-    font-family: Montserrat, sans-serif;
-}
-
-
-header {
-    /* Largeur a 100% */
-    width:7vw;
-    /* Reste en haut meme si on defile*/
-    position: sticky;
-    /* Pas de margin */
-    top: 0;
-    font-size: large;
+    /*Conteneur avec bord arrondi*/
+    border: black solid 1px;
+    border-radius: 100%;
+    font-family: 'Rokkitt', Times, serif, sans-serif;
+    
     text-align: center;
-    padding-left: 10vw;
+    font-size: 1.5em;
+
+    /*Mise en italique */
+    font-style: italic;
+    
+
+    /*Mise en gras */
+    font-weight: bold;
+
+    
 }
 
-/* Pour l'élement ul aprés header */
-header > ul {
-    /* On ajoute une flex box */
+.contact{
     display: flex;
-    /* On aligne le texte au centre */
-    text-align: center;
-    /* Haureur de la variable */
-    height: var(--hauteur-menu);
-    
-}
-
-/* On enleve les styles par dedfault */
-header ul {
-    list-style-type: none;  
-}
-
-/* Les li dans ul dans header */
-header > ul > li {
-    flex: 2;
-    background-color:rgba(0,0,0,0.8);
-}
-
-header > ul > li > a {
-    position:absolute;
-    top: 12%;
-    width: 100%;
-    transform: translate(-50%, 1%);
-    color: white;
-    
-}
-
-li a {
-    text-decoration: none;
-    color: black;
-}
-
-
-.menu-deroulant > a::before{
-    content: "Ξ";
-    color: red;
-    font-size: 1vw;
-    display: inline-block;
-}
-
-.sous-menu {
-    margin-top: var(--hauteur-menu);
-    text-align: left;
-    background-color:rgba(0,0,0,0.8);
-    color: white;
-    border-radius: 2px;
-    overflow: hidden;
-    max-height: 0;
-    text-align: center;
-
-}
-
-.sous-menu > li > a {
-    padding: 2%;
-    width: 100vw;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
-    color: white;
-}
 
-
-
-.sous-menu > li:hover {
-    background-color: rgba(33, 105, 236, 0.3);
-}
-
-.sous-menu > li:hover > a {
-    color: white;
-    
-}
-
-@keyframes rotationFleche {
-0% {
-    transform: rotate(0deg);
-}
-100%{
-    transform: rotate(90deg);
-}
-}  
-
-.menu-deroulant:hover > a::before{
-    animation: rotationFleche 0.2s linear forwards;
-}
-
-@keyframes apparitionSousMenu {
-    0% {
-    }
-    30% {
-    }
-    100% {
-        max-height: 50em;
-    }
-}
-
-.menu-deroulant:hover > .sous-menu {
-    animation: apparitionSousMenu 1s forwards;
-    text-align: left;
-}
-
-section{
-    padding-top: 9vh;
-    text-align: center;
+    width: 100%;
+    height: 12vh;
 
 }
 
-section > h2 {
-    color: #a8084a;
-    font-size: 2vw;
-}
-section > h1 {
-    font-size: 4vw;
-    color: rgb(48, 48, 48);
-    font-family: 'wpf';
-    src: url('wpf.eot');
-    src: url('wpf.eot?#iefix') format('embedded-opentype'),
-            url('wpf.woff2') format('woff2'),
-            url('wpf.woff') format('woff'),
-            url('wpf.ttf') format('truetype'),
-            url('wpf.sbg#svgwpf') format('svg');
+
+a > img{
+    /*Diminuer l'image*/
+    max-width: 50%;
+    max-height: 50%;
 }
 
-section > h3 {
-    font-size: 1vw;
-    color:gainsboro;
-    font-family:'Courier New', Courier, monospace;
-
-}
-
-.traduire{
-    font-size: 1vw;
-    color: #a8084a;
-    font-family: 'Courier New', Courier, monospace;
-}
-
-div > button {
-    background-color: #a8084a;
-    color: black;
-    border: none;
-    border-radius: 5px;
-    padding: 1%;
-    font-size: 1vw;
-    font-family: 'Courier New', Courier, monospace;
-}
-
-div > button:hover {
-    background-color: #a8084a;
-    color: blue;
-    border: none;
-    border-radius: 5px;
-    padding: 1%;
-    font-size: 1vw;
-    font-family: 'Courier New', Courier, monospace;
-}
-
-div > button:active {
-    background-color: #a8084a;
-    color: black;
-    border: none;
-    border-radius: 5px;
-    padding: 1%;
-    font-size: 1vw;
-    font-family: 'Courier New', Courier, monospace;
-}
-
-div > button:focus {
-    background-color: blue;
-    color: black;
-    border: none;
-    border-radius: 5px;
-    padding: 1%;
-    font-size: 1vw;
-    font-family: 'Courier New', Courier, monospace;
-}
