@@ -23,15 +23,17 @@ body{
 
 }
 
+
+
 @media (min-width: 768px){
     h1{
 
-        font-size: 2.5em;
+        font-size: 2em;
         margin-bottom: 0;
         /*Font-family arondisment*/
         font-family: 'times new roman', serif;
         letter-spacing: 2px;
-        height: 12vh;
+        height: 5vh;
         text-align: center;
     }
 
@@ -67,9 +69,10 @@ body{
         justify-content: space-around;
         align-items: center;
         /*Descendre de 10px*/
-        margin-top: 10px;
+        margin-top: 10vh;
         width: 50%;
         height: 12vh;
+        justify-self: flex-end;
 
     }
     .MeilleurProjet{
@@ -78,6 +81,12 @@ body{
     .aboutMe > .descriptionMySelf > p{
         font-size: medium;
     }
+    .separateur{
+        height: 60%;
+        border-right:rgba(0, 0, 0, 0.288) solid 4px;
+    
+    }
+
 
 }
 @media (max-width: 768px){
@@ -86,13 +95,12 @@ body{
         justify-content: center;
         align-items: center;
         text-align: center;
-        font-size: 2em;
+        font-size: 1.5em;
         margin-bottom: 0;
         /*Font-family arondisment*/
         font-family: 'times new roman', serif;
         letter-spacing: 2px;
-        height: 12vh;
-        align-self: center;
+        height: 5vh;
     }
 
     .MeilleurProjet > a > img{
@@ -123,11 +131,12 @@ body{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        align-items: center;
+        align-items: flex-end;
         /*Descendre de 10px*/
         margin-top: 10px;
         width: 100%;
         height: 12vh;
+        justify-self: self-end;
     }
 
     .bandoCitation{
@@ -139,8 +148,11 @@ body{
     }
 
     .aboutMe > .descriptionMySelf > p{
-        font-size: x-small;
+        font-size: xx-small;
+        padding-left: 2vw;
     }
+
+    
 }
 
 
@@ -266,12 +278,16 @@ p{
 .aboutMe > .descriptionMySelf > p{
     margin-bottom: 0;
     margin-right: 4vw;
+    margin-left: 4vw;
     font-family:'Rokkitt', Times, serif, sans-serif;
     letter-spacing: 2px;
 
     /*Mise en italique */
     font-style: italic;
     text-align: left;
+
+    box-shadow: black 0px 0px 5px;
+    
 }
 
 
@@ -281,6 +297,7 @@ p{
     /*Diminuer l'image*/
     width : 120px;
     height : 200px;
+    box-shadow: black 0px 0px 10px;
 };
 
 
@@ -302,3 +319,4 @@ p{
 .contact > a > img:hover{
     animation: rotation 1s ease-in-out 0s normal ;
 }
+
