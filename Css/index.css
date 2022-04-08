@@ -39,8 +39,8 @@ body{
 
     .MeilleurProjet > a > img{
         /*Diminuer l'image*/
-        width : 10vw;
-        height : 13vh;
+        width: 100px;
+        height: 100px;
     }
 
     .contact > a > img{
@@ -105,8 +105,8 @@ body{
 
     .MeilleurProjet > a > img{
         /*Diminuer l'image*/
-        max-width: 70px;
-        max-height: 70px;
+        width : 70px;
+        height : 70px;
     }
 
     .contact > a > img{
@@ -311,12 +311,24 @@ p{
     0% {
         transform: rotate(0deg);
     }
+    10% {
+        transform: rotate(70deg);
+    }
+    40% {
+        transform: rotate(-70deg);
+    }
+    60% {
+        transform: rotate(30deg);
+    }
+    90% {
+        transform: rotate(-30deg);
+    }
     100% {
-        transform: rotate(360deg);
+        transform: rotate(0deg);
     }
 }
 
 .contact > a > img:hover{
-    animation: rotation 1s ease-in-out 0s normal ;
+    animation: rotation 2s ease-in-out 0s normal ;
 }
 
