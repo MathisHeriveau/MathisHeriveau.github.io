@@ -45,14 +45,15 @@ header{
     list-style-type: none;
     
 }
-.menu> ul{
+.menu > ul{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
-.menu> li{
+.menu > li{
     width: 16vw;
-    text-align: center;
+    text-align: left;
+    background-color: blue;
 }
 
 
@@ -105,6 +106,7 @@ header{
 .sous li{
     float: none;
     width: 100%;
+    
     text-align: left;
 }
 .sous a{
