@@ -104,13 +104,11 @@ header{
 }
 
 .sous li{
-    float: none;
     width: 100%;
     
     text-align: left;
 }
 .sous a{
-    padding: 10px;
     border-bottom: none;
 }
 .sous a:hover{
