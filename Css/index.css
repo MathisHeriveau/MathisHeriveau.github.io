@@ -26,18 +26,34 @@ header{
     background-color: white;
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 14px;
 }
-.menu ul{
-    list-style-type: none;
+/* Media inferieur a 700px */
+@media screen and (min-width: 700px){
+    header{
+        font-size: small;
+    }
+}
+@media screen and (max-width: 700px){
+    header{
+        font-size: xx-small;
+    }
 }
 
-.menu li{
-    float: left;
+
+.menu ul{
+    list-style-type: none;
+    
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+li{
     width: 16vw;
     text-align: center;
-    position: relative;
 }
+
 
 
 .menu ul::after{
@@ -53,21 +69,38 @@ header{
 }
 
 .menu a:hover{
-    color: green;
-    border-bottom: 2px solid green;
+    color: rgb(238,116,22);
+    border-bottom: 2px solid rgb(238,116,22);
 }
+
+@media screen and (min-width: 700px){
+    .menu > ul > li > img{
+        margin-right: 100%; 
+        width: 100px; 
+        height: ato; 
+    }
+}
+@media screen and (max-width: 700px){
+    .menu > ul > li > img{
+        margin-right: 100%; 
+        width: 60px; 
+        height: auto; 
+    }
+}
+/* -------------------------------- Sous menu ------------------------------- */
 
 .sous{
     display: none;
     box-shadow: 0px 1px 2px #CCC;
     background-color: white;
     position: absolute;
-    width: 100%;
+    width: 20vw;
     z-index: 1000;
 }
 .menu > ul li:hover .sous{
     display: block;
 }
+
 .sous li{
     float: none;
     width: 100%;
@@ -81,14 +114,23 @@ header{
     border-bottom: none;
     background-color: RGBa(200,200,200,0.1);
 }
-.deroulant > a::after{
-    content:" ▼";
-    font-size: 12px;
+
+
+@media screen and (min-width: 700px){
+    .deroulant > a::after{
+        content:" ▼";
+        font-size: 12px;
+    }
 }
 
+
+/* -------------------------------- Selection ------------------------------- */
 li > .selectionne{
     color: seagreen;
 }
+
+
+
 
 /* -------------------------------------------------------------------------- */
 /*                               Partie section                               */
@@ -104,5 +146,17 @@ section{
     width: 100%;
     height: 100%;
 
-    background-color: RGBa(200,200,200,0.5);
+    /* background-color: rgb(64,188,211); */
+}
+
+section > .presentation{
+    width: 100%;
+    height: 100%;
+}
+
+section > .presentation > p{
+    color: black;
+    font-size: medium;
+    margin: 0;
+    padding: 16px;
 }
